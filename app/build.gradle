@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.ashour.test"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:$appcompat"
+    implementation "androidx.browser:browser:$browser"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintVersion"
+    implementation "com.google.android.material:material:$googleVersion"
+    implementation "androidx.recyclerview:recyclerview:$appcompat"
+    implementation "de.hdodenhof:circleimageview:$circleImageViewVersion"
+    implementation "com.google.code.gson:gson:$gson"
+    implementation "androidx.multidex:multidex:$multidex"
+    implementation "com.github.Pradyuman7:ChocoBar:$ChocoBar"
+    implementation "com.nabinbhandari.android:permissions:$permission"
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    //validation
+    implementation "com.basgeekball:awesome-validation:$validation"
+    implementation "org.jsoup:jsoup:$jsoup"
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    //ButterKnife
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+
+    //google stuff
+    implementation "com.google.android.gms:play-services-maps:$map"
+    implementation "com.google.android.gms:play-services-location:$location"
+    implementation "com.google.android.gms:play-services-places:$places"
+
+    testImplementation 'junit:junit:4.12'
+}

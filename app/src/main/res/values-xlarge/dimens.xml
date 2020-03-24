@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="hugeTextSize">35dp</dimen>
+    <dimen name="headerTextSize">30dp</dimen>
+    <dimen name="textSize">25dp</dimen>
+    <dimen name="textSize_small">22dp</dimen>
+    <dimen name="textSize_toosmall">16dp</dimen>
+</resources>

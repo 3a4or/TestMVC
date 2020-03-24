@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test</string>
+    <string name="label_loading">جارى التحميل.. برجاء الإنتظار</string>
+    <string name="label_offline">لا يوجد إتصال</string>
+    <string name="msg_no_connection">لا يوجدة إتصال بأي شبكة.</string>
+    <string name="label_wifi_settings">إعدادات الإتصال</string>
+    <string name="label_home">الرئيسية</string>
+    <string name="label_search">البحث</string>
+    <string name="label_password">كلمة المرور</string>
+    <string name="label_email">البريد الإلكترونى</string>
+    <string name="label_help">المساعدة</string>
+    <string name="label_login">تسجيل دخول </string>
+    <string name="label_back">عودة</string>
+</resources>
